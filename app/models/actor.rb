@@ -8,4 +8,5 @@ class Actor < ActiveRecord::Base
 
   def associated_characters
     self.characters
+  end
 end
