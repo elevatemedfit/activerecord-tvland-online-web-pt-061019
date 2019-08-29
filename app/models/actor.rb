@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def associated_characters
-    Allshows = []
+    all_shows = []
     all_shows = self.shows.collect {|show| show.name}
   end
 end
