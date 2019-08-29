@@ -9,5 +9,8 @@ class Actor < ActiveRecord::Base
   def associated_characters
     all_shows = []
     all_shows = self.shows.collect {|show| show.name}
+    all_characters = []
+    all_characters = self.characters.collect{|character| character.name}
+    
   end
 end
