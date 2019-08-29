@@ -7,6 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def associated_characters
-    self.characters.collect {|character| character.name}
+    rolls = self.characters.collect {|character| character.name}
   end
 end
